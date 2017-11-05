@@ -1,14 +1,28 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <title>codebar.io - What's on TV tomorrow?</title>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-  <body>
-    <header>
-    <img id="logo" src='https://raw.github.com/codebar/planner/master/app/assets/images/logo.png' width='200' />
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Freyja, Nash, TV, Schedule">
+  <meta name="description" content="A simple website where Freyja posts her projects">
+  <meta name="author" content="Freyja Nash">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    BBC TV Schedule
+  </title>
+</head>
+<body>
+  <div id="intro">
+  <a href="http://freyjanash.co.uk/">
+  <img src="https://avatars3.githubusercontent.com/u/25419501?v=3&s=400" alt="Freyja Nash">
+  </a>
+  <h3 id="title">BBC TV Schedule</h3>
+  <p>I used a tutorial to build this from <a href="http://codebar.io">codebar</a>. I really enjoyed doing AJAX requests and playing with JSON data.
+  </p>
+  </div>
+
+  <div class="break"></div>
+
+
     <div id="container">
       <h1>What's on TV tomorrow?</h1>
       <ul id="genres">
@@ -16,8 +30,25 @@
       <ul id="programmes">
       </ul>
     </div>
+    <h4 id="credit">This site was based off of a tutorial from</h4>
     <footer>
-    <div id="content"> by <a href="http://codebar.io">codebar</a> </div>
-    </footer>
-  </body>
+
+      <a href="http://codebar.io"><img id="logo" src='https://raw.github.com/codebar/planner/master/app/assets/images/logo.png' alt="logo" width='200' />
+      </a>
+
+   </footer>
+    <link rel="stylesheet" href="/theme.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/jquery.js" ></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97900578-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+ </body>
 </html>

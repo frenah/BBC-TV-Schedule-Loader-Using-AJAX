@@ -1,0 +1,65 @@
+﻿div	{
+	font-size: 2vw;
+	font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+	color: rgb(150, 251, 199);
+	text-shadow: 0 1px 0 black, 0 -1px 0 black, 1px 0 0 black, -1px 0 0 black;
+}
+
+button	{
+	cursor: pointer;
+}
+
+#title	{
+	display: inline;
+}
+
+#intro p	{
+	margin: 11px;
+	text-indent: 40px;
+	font-style: italic;
+	font-size: 2vw;
+}
+
+#intro	{
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	background-color: black;
+	width: 100%;
+	color: rgb(150, 251, 199);
+	position: fixed;
+	margin-top: 0px;
+	opacity: 0.90;
+	display: inline-block;
+	height: 20vh;
+	z-index: 10;
+}
+
+#intro img		{
+	height: 20vh;
+	width: 20vh;
+	float: left;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#intro h3	{
+	font-size: 3vw
+}
+.break {
+	height: 21vh;
+}
+
+
+
+body	{
+/* Background was sourced from http://lea.verou.me/css3patterns/
+*/
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}

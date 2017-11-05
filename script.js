@@ -41,10 +41,10 @@ function retrieveGenres()   {
         var genreKey = element.key;
 //How the human read Genres
         var genreTitle = element.title;
-        $('#genres').append('<li id="' + genreKey + '">' + genreTitle + '</li>');
+        $('#genres').append('<button id="' + genreKey + '">' + genreTitle + '</button>');
     })
     }).fail(function()  {
-        $('#genres').text('Failed to load data (BBCs json data is probably offline)' );
+        $('#genres').html('<h1>Failed to load data (BBCs json data is probably offline). For more details click <a href="http://www.bbc.co.uk/tv/programmes/genres.json">here</a></h1>');
     }).always(function()    {
     });
 }
@@ -65,7 +65,7 @@ function getTomorrowsSchedule(genre)   {
        $('#programmes').append(processEpisode(episode));
     })
     }).fail(function()  {
-        $('#programmes').text('Failed to load data (BBCs json data is probably offline)');
+        $('#programmes').html('<h1>Failed to load data (BBCs json data is probably offline). For more details click <a href="http://www.bbc.co.uk/tv/programmes/genres.json">here</a></h1>');
     }).always(function()    {
     });
 }
@@ -93,9 +93,9 @@ $(document).ready(  function()  {
 })
 
 //When click on a genre, it runs the function that gets the T.V episodes and appends them to the page
-$(document).on('click', '#genres li', function()   {
+$(document).on('click', '#genres button', function()   {
     getTomorrowsSchedule(this.getAttribute('id'));
 //Lets you know which genre has been clicked on by changing it's color
-    $('#genres li').removeClass('active');
+    $('#genres button').removeClass('active');
     $(this).addClass('active');
 })
